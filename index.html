@@ -39,7 +39,7 @@
                 <div class="media_date_picker">
                 
                 <div class="form-group first_dp">
-			<div class="input-group date" id="datetimepicker1">
+			<div class="input-group date" id="datetimepicker3">
                 
                 
 			  <input type="text" class="form-control" />
@@ -59,7 +59,7 @@
 <!--                <div style="width: 25px;"></div>-->
                 
                 <div class="form-group second_dp">
-			<div class="input-group date" id="datetimepicker2">
+			<div class="input-group date" id="datetimepicker4">
 			  <input type="text" class="form-control" />
                 <span class="input-group-addon">
         <span class="glyphicon glyphicon-remove"></span>
@@ -544,7 +544,7 @@
 	    locale: 'ru',
 		stepping:10,
 		format: 'DD.MM.YYYY',
-		
+		defaultDate: moment('01.11.2017').format('DD.MM.YYYY'),
 		
 	  });
         $('.glyphicon-remove').click(function () {
@@ -556,11 +556,39 @@
 	    locale: 'ru',
 		stepping:10,
 		format: 'DD.MM.YYYY',
-		
+		defaultDate: moment('01.11.2017').format('DD.MM.YYYY'),
 		
 	  });
         $('.glyphicon-remove').click(function () {
             $('#datetimepicker2').data("DateTimePicker").clear();
+        });
+        
+        
+        
+        
+        
+        //
+        $('#datetimepicker3').datetimepicker({
+	    locale: 'ru',
+		stepping:10,
+		format: 'DD.MM.YYYY',
+		defaultDate: moment('01.11.2017').format('DD.MM.YYYY'),
+		
+	  });
+        $('.glyphicon-remove').click(function () {
+            $('#datetimepicker3').data("DateTimePicker").clear();
+        });
+        
+        
+        $('#datetimepicker4').datetimepicker({
+	    locale: 'ru',
+		stepping:10,
+		format: 'DD.MM.YYYY',
+		defaultDate: moment('01.11.2017').format('DD.MM.YYYY'),
+		
+	  });
+        $('.glyphicon-remove').click(function () {
+            $('#datetimepicker4').data("DateTimePicker").clear();
         });
      
     });
